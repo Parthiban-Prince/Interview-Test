@@ -32,7 +32,7 @@ export async function  createPaste(req,res) {
     });
     await paste.save();
 
-    const url  = `http://localhost:3000/api/p/${paste._id}`
+    const url  = `https://interview-test-kohl.vercel.app/api/p/${paste._id}`
     
     return res.status(201).json({id: paste._id, url});
 
